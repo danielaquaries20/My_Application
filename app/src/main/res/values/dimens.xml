@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size">200sp</dimen>
+    <dimen name="margin_text">20dp</dimen>
+    <dimen name="value40">40dp</dimen>
+    <dimen name="value5">5dp</dimen>
+    <dimen name="value15">15dp</dimen>
+    <dimen name="value60">60dp</dimen>
+    <dimen name="value80">80dp</dimen>
+    <dimen name="value100">100dp</dimen>
+    <dimen name="value150">150dp</dimen>
+    <dimen name="value200">200dp</dimen>
+    <dimen name="value30">30dp</dimen>
+    <dimen name="value10">10dp</dimen>
+    <dimen name="value3">3dp</dimen>
+</resources>

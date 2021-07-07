@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pertemuan9Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/value15">
+
+        <ImageView
+            android:id="@+id/imageHonkai"
+            android:layout_width="@dimen/value200"
+            android:layout_height="@dimen/value200"
+            android:contentDescription="@string/image"
+            android:src="@drawable/icon_honkaiimpact3" />
+
+        <Button
+            android:id="@+id/iniTombol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/value10"
+            android:backgroundTint="@color/black"
+            android:text="Tombol"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+</ScrollView>

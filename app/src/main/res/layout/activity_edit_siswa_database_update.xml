@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="activity"
+            type="com.example.myapplication.EditSiswaDatabaseUpdateActivity" />
+
+    </data>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/value15"
+        tools:context=".EditSiswaDatabaseUpdateActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tambah_siswa"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/ivDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:onClick="onClick"
+                android:src="@drawable/ic_baseline_delete" />
+
+        </RelativeLayout>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value5"
+            android:layout_marginBottom="@dimen/value5"
+            android:hint="@string/nama_siswa"
+            android:inputType="textCapWords"
+            android:text='@={activity.nama}' />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value5"
+            android:layout_marginBottom="@dimen/value5"
+            android:hint="@string/sekolah"
+            android:inputType="textCapWords"
+            android:text='@={activity.sekolah}' />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value5"
+            android:layout_marginBottom="@dimen/value5"
+            android:hint="@string/gender"
+            android:inputType="textCapWords"
+            android:text='@={activity.gender}' />
+
+        <Button
+            android:id="@+id/buttonUpdateSiswa"
+            android:layout_width="@dimen/value150"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/value10"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:onClick="onClick"
+            android:text="@string/update"
+            android:textAllCaps="false" />
+
+
+    </LinearLayout>
+</layout>
+

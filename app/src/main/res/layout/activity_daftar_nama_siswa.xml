@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="adapter"
+            type="com.example.myapplication.adapter.AdapterRETambahSiswa" />
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".DaftarNamaSiswaActivity">
+
+        <Button
+            android:id="@+id/buttonTambahSiswa"
+            android:layout_width="@dimen/value150"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/value15"
+            android:backgroundTint="@color/colorDarkYellow"
+            android:onClick="onClick"
+            android:text="@string/tambah"
+            android:textAllCaps="false"
+            android:textColor="@color/whiteForward" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adapter='@{adapter}'
+            android:orientation="vertical"
+            app:layoutManager='androidx.recyclerview.widget.LinearLayoutManager' />
+
+    </LinearLayout>
+
+</layout>

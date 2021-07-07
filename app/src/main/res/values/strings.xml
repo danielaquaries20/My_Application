@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="salam_halo">Halo There</string>
+    <string name="latihan_resources">Latihan Resources</string>
+    <string name="apps">Apps</string>
+    <string name="games">Games</string>
+    <string name="movies_ampdan_tv"><![CDATA[Movies & TV]]></string>
+    <string name="music">Music</string>
+    <string name="books">Books</string>
+    <string name="news">News</string>
+    <string name="popular_apps_games">Popular Apps + Games</string>
+    <string name="more">More</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="facebook">Facebook</string>
+    <string name="youtube">YouTube</string>
+    <string name="zoom">Zoom</string>
+    <string name="google_meet">Google Meet</string>
+    <string name="telegram">Telegram</string>
+    <string name="new_plus_udate_game">New + Udate Game</string>
+    <string name="honkai_impact_3">Honkai Impact 3</string>
+    <string name="clash_of_clans">Clash Of Clans</string>
+    <string name="boom_beach">Boom Beach</string>
+    <string name="brawl_stars">Brawl Stars</string>
+    <string name="subway_surfers">Subway Surfers</string>
+    <string name="hay_day">Hay Day</string>
+    <string name="image">Image</string>
+    <string name="next">Next</string>
+    <string name="titik">.</string>
+    <string name="_1">1</string>
+    <string name="_4">4</string>
+    <string name="_7">7</string>
+    <string name="c">C</string>
+    <string name="kurungbuka">(</string>
+    <string name="_2">2</string>
+    <string name="_5">5</string>
+    <string name="_8">8</string>
+    <string name="del">Del</string>
+    <string name="kurungtutup">)</string>
+    <string name="_3">3</string>
+    <string name="_6">6</string>
+    <string name="_9">9</string>
+    <string name="_0">0</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="kali">*</string>
+    <string name="bagi">/</string>
+    <string name="samadengan">=</string>
+    <string name="titiktitik">............</string>
+    <string name="hasil">Hasil</string>
+    <string name="perhitungan">Perhitungan</string>
+    <string name="masukan_jumlah_gambar">Masukan Jumlah Gambar :</string>
+    <string name="jumlah">Jumlah</string>
+    <string name="tampilkan">Tampilkan</string>
+    <string name="gender">Gender</string>
+    <string name="gender_siswa">Gender Siswa</string>
+    <string name="light_night_mode">Light/Night Mode</string>
+    <string name="profile">Profile</string>
+    <string name="calculator">Calculator</string>
+    <string name="nama_siswa">Nama Siswa</string>
+    <string name="semangat_belajar_android">Semangat Belajar Android</string>
+    <string name="alamat">Alamat</string>
+    <string name="alamat_siswa">Alamat Siswa</string>
+    <string name="sekolah">Sekolah</string>
+    <string name="sekolah_siswa">Sekolah Siswa</string>
+    <string name="hobi">Hobi</string>
+    <string name="hobi_siswa">Hobi Siswa</string>
+    <string name="email">Email</string>
+    <string name="email_siswa">Email Siswa</string>
+    <string name="image_profile">Image Profile</string>
+    <string name="lihat_list_gambar">Lihat List Gambar</string>
+    <string name="profile_sekelas">Profile Sekelas</string>
+    <string name="_0_kali_pause">0 Kali Pause</string>
+    <string name="coba_coba">Coba Coba</string>
+    <string name="profile_sekelas_databinding">Profile Sekelas DataBinding</string>
+    <string name="ketik_nama_titiktitik">Ketik Nama ...</string>
+    <string name="save">Save</string>
+    <string name="shared_preferences">Shared Preferences</string>
+    <string name="tambah">Tambah</string>
+    <string name="tambah_siswa">Tambah Siswa</string>
+    <string name="simpan">Simpan</string>
+    <string name="daftar_siswa">Daftar Siswa</string>
+    <string name="update">Update</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera_and_gallery">Camera and Gallery</string>
+
+    <string-array name="gambar_profile">
+        <item>@drawable/icon_honkaiimpact3</item>
+        <item>@drawable/ikon_brawlstars</item>
+        <item>@drawable/icon_subwaysurfers</item>
+        <item>@drawable/ikon_hayday</item>
+        <item>@drawable/icon_clashofclans</item>
+    </string-array>
+
+    <string-array name="nama_teman">
+        <item>Angga Pambudi Setiawan</item>
+        <item>Lingga Aditya Nugroho</item>
+        <item>Nadiva W Intan N</item>
+        <item>Riandrika Yusuf. H</item>
+        <item>Sabian Farel</item>
+    </string-array>
+
+    <string-array name="sekolah_teman">
+        <item>SMK N 11 Semarang</item>
+        <item>SMK N 11 Semarang</item>
+        <item>SMK N 3 Kendal</item>
+        <item>SMK N 11 Semarang</item>
+        <item>SMK N 11 Semarang</item>
+    </string-array>
+
+    <string-array name="gender_teman">
+        <item>Laki - Laki</item>
+        <item>Laki - Laki</item>
+        <item>Perempuan</item>
+        <item>Laki - Laki</item>
+        <item>Laki - Laki</item>
+    </string-array>
+</resources>

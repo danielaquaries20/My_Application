@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value40"
+            android:layout_marginBottom="@dimen/value5"
+            android:background="@color/colorGrey"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/value15"
+                android:contentDescription="@string/image"
+                android:src="@drawable/ic_baseline_menu"
+                android:tint="@color/colorOldGrey" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/value15"
+                android:text="@string/latihan_resources"
+                android:textColor="@color/colorOldGrey"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/textApps"
+                style="@style/ButtonResorces"
+                android:background="@drawable/background_green_darkgreen"
+                android:onClick="menu"
+                android:text="@string/apps" />
+
+            <TextView
+                style="@style/ButtonResorces"
+                android:background="@drawable/background_yellow_darkyellow"
+                android:onClick="menu"
+                android:text="@string/games" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                style="@style/ButtonResorces"
+                android:background="@drawable/background_red_darkred"
+                android:onClick="menu"
+                android:text="@string/movies_ampdan_tv" />
+
+            <TextView
+                style="@style/ButtonResorces"
+                android:background="@drawable/background_blue_darkblue"
+                android:onClick="menu"
+                android:text="@string/music" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                style="@style/ButtonResorces"
+                android:background="@drawable/background_orange_darkorange"
+                android:onClick="menu"
+                android:text="@string/books" />
+
+            <TextView
+                style="@style/ButtonResorces"
+                android:background="@drawable/background_purple_darkpurple"
+                android:onClick="menu"
+                android:text="@string/news" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value60">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/value15"
+                android:text="@string/popular_apps_games"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                style="@style/ButtonMore"
+                android:layout_marginEnd="@dimen/value15"
+                android:background="@drawable/background_oldgreen_darkoldgreen"
+                android:onClick="menu"
+                android:padding="@dimen/value5"
+                android:text="@string/more"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/value5">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/value5"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/ImageIconAplikasi"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/icon_whatsapp" />
+
+                    <TextView
+                        style="@style/TitleAplikasi"
+                        android:text="@string/whatsapp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/value5"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/ImageIconAplikasi"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/icon_facebook" />
+
+                    <TextView
+                        style="@style/TitleAplikasi"
+                        android:text="@string/facebook" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/value5"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/ImageIconAplikasi"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/icon_youtube" />
+
+                    <TextView
+                        style="@style/TitleAplikasi"
+                        android:text="@string/youtube" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/value5"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/ImageIconAplikasi"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/icon_zoom" />
+
+                    <TextView
+                        style="@style/TitleAplikasi"
+                        android:text="@string/zoom" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/value5"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/ImageIconAplikasi"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/icon_google_meet" />
+
+                    <TextView
+                        style="@style/TitleAplikasi"
+                        android:text="@string/google_meet" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/value5"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/ImageIconAplikasi"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/icon_telegram" />
+
+                    <TextView
+                        style="@style/TitleAplikasi"
+                        android:text="@string/telegram" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value60">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/value15"
+                android:text="@string/new_plus_udate_game"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                style="@style/ButtonMore"
+                android:layout_marginEnd="@dimen/value15"
+                android:background="@drawable/background_oldgreen_darkoldgreen"
+                android:onClick="menu"
+                android:padding="@dimen/value5"
+                android:text="@string/more"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/value5">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/value5"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/ImageIconAplikasi"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/icon_honkaiimpact3" />
+
+                    <TextView
+                        style="@style/TitleAplikasi"
+                        android:text="@string/honkai_impact_3" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/value5"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/ImageIconAplikasi"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/icon_clashofclans" />
+
+                    <TextView
+                        style="@style/TitleAplikasi"
+                        android:text="@string/clash_of_clans" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/value5"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/ImageIconAplikasi"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/icon_boombeach" />
+
+                    <TextView
+                        style="@style/TitleAplikasi"
+                        android:text="@string/boom_beach" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/value5"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/ImageIconAplikasi"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/ikon_brawlstars" />
+
+                    <TextView
+                        style="@style/TitleAplikasi"
+                        android:text="@string/brawl_stars" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/value5"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/ImageIconAplikasi"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/icon_subwaysurfers" />
+
+                    <TextView
+                        style="@style/TitleAplikasi"
+                        android:text="@string/subway_surfers" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/value5"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/ImageIconAplikasi"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/ikon_hayday" />
+
+                    <TextView
+                        style="@style/TitleAplikasi"
+                        android:text="@string/hay_day" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnCobaCoba"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/value10"
+                    android:backgroundTint="@color/colorDarkYellow"
+                    android:text="@string/coba_coba"
+                    android:textAllCaps="false"
+                    android:textColor="@color/whiteForward" />
+
+
+                <Button
+                    android:id="@+id/btnNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@android:color/holo_red_dark"
+                    android:text="@string/calculator"
+                    android:textAllCaps="false"
+                    android:textColor="@color/whiteForward" />
+
+                <Button
+                    android:id="@+id/btnProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/value10"
+                    android:backgroundTint="@color/colorDarkOrange"
+                    android:text="@string/profile"
+                    android:textAllCaps="false"
+                    android:textColor="@color/whiteForward" />
+
+                <Button
+                    android:id="@+id/btnLihatListGambar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/value10"
+                    android:backgroundTint="@color/colorDarkBlue"
+                    android:text="@string/lihat_list_gambar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/whiteForward" />
+
+                <Button
+                    android:id="@+id/btnProfileSekelas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/value10"
+                    android:backgroundTint="@color/colorGreen"
+                    android:text="@string/profile_sekelas"
+                    android:textAllCaps="false"
+                    android:textColor="@color/whiteForward" />
+
+                <Button
+                    android:id="@+id/btnProfileSekelasDataBinding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/value10"
+                    android:backgroundTint="@color/black"
+                    android:text="@string/profile_sekelas_databinding"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btnSharedPreferences"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/value10"
+                    android:backgroundTint="@color/colorPurple"
+                    android:text="@string/shared_preferences"
+                    android:textAllCaps="false"
+                    android:textColor="@color/whiteForward" />
+
+                <Button
+                    android:id="@+id/btnDaftarSiswa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/value10"
+                    android:backgroundTint="@android:color/holo_red_light"
+                    android:text="@string/daftar_siswa"
+                    android:textAllCaps="false"
+                    android:textColor="@color/whiteForward" />
+
+                <Button
+                    android:id="@+id/btnCameraAndGallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/value10"
+                    android:backgroundTint="@color/colorDarkOldGreen"
+                    android:text="@string/camera_and_gallery"
+                    android:textAllCaps="false"
+                    android:textColor="@color/whiteForward" />
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+        <Switch
+            android:id="@+id/switchLightNightMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/value10"
+            android:switchPadding="@dimen/value10"
+            android:text="@string/light_night_mode" />
+
+
+    </LinearLayout>
+
+</ScrollView>

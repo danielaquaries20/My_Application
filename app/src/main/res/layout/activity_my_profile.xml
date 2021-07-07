@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/value15">
+
+        <ImageView
+            android:layout_width="@dimen/value150"
+            android:layout_height="@dimen/value200"
+            android:contentDescription="@string/image_profile"
+            android:src="@drawable/daniel" />
+
+        <TextView
+            android:id="@+id/tvNamaSiswa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/value5"
+            android:text="@string/nama_siswa"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSemangatBelajarAndroid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/semangat_belajar_android"
+            android:textAlignment="center"
+            android:textColor="@color/colorOldGrey" />
+
+        <TextView
+            android:id="@+id/tvBerapaKaliPause"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/value10"
+            android:text="@string/_0_kali_pause"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tvGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/value10"
+            android:layout_marginTop="@dimen/value30"
+            android:layout_marginEnd="@dimen/value10"
+            android:layout_marginBottom="@dimen/value5"
+            android:text="@string/gender"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorOldGrey" />
+
+        <TextView
+            android:id="@+id/tvGenderSiswa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/value10"
+            android:layout_marginEnd="@dimen/value10"
+            android:layout_marginBottom="@dimen/value5"
+            android:text="@string/gender_siswa"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/value10"
+            android:layout_marginTop="@dimen/value30"
+            android:layout_marginEnd="@dimen/value10"
+            android:layout_marginBottom="@dimen/value5"
+            android:text="@string/alamat"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorOldGrey" />
+
+        <TextView
+            android:id="@+id/tvAlamatSiswa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/value10"
+            android:layout_marginEnd="@dimen/value10"
+            android:layout_marginBottom="@dimen/value5"
+            android:text="@string/alamat_siswa"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvSekolah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/value10"
+            android:layout_marginTop="@dimen/value30"
+            android:layout_marginEnd="@dimen/value10"
+            android:layout_marginBottom="@dimen/value5"
+            android:text="@string/sekolah"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorOldGrey" />
+
+        <TextView
+            android:id="@+id/tvSekolahSiswa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/value10"
+            android:layout_marginEnd="@dimen/value10"
+            android:layout_marginBottom="@dimen/value5"
+            android:text="@string/sekolah_siswa"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvHobi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/value10"
+            android:layout_marginTop="@dimen/value30"
+            android:layout_marginEnd="@dimen/value10"
+            android:layout_marginBottom="@dimen/value5"
+            android:text="@string/hobi"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorOldGrey" />
+
+        <TextView
+            android:id="@+id/tvHobiSiswa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/value10"
+            android:layout_marginEnd="@dimen/value10"
+            android:layout_marginBottom="@dimen/value5"
+            android:text="@string/hobi_siswa"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/value10"
+            android:layout_marginTop="@dimen/value30"
+            android:layout_marginEnd="@dimen/value10"
+            android:layout_marginBottom="@dimen/value5"
+            android:text="@string/email"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorOldGrey" />
+
+        <TextView
+            android:id="@+id/tvEmailSiswa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/value10"
+            android:layout_marginEnd="@dimen/value10"
+            android:layout_marginBottom="@dimen/value5"
+            android:text="@string/email_siswa"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>

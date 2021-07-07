@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/value15"
+    tools:context=".BelajarKotlinMinggu7">
+
+    <TextView
+        android:id="@+id/tvMasukanJumlahGambar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/masukan_jumlah_gambar"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/etJumlah"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value40"
+        android:hint="@string/jumlah"
+        android:inputType="number"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp" />
+
+    <Button
+        android:id="@+id/btnTampilkanJumlahGambar"
+        android:layout_width="@dimen/value150"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/value15"
+        android:backgroundTint="@color/black"
+        android:text="@string/tampilkan"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/ivGambar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/value10" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutGambar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/value5"
+            android:paddingBottom="@dimen/value5">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

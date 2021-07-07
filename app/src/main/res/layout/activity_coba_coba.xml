@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CobaCoba">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvHasil"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="end"
+            android:padding="@dimen/value5"
+            android:singleLine="true"
+            android:text="@string/hasil"
+            android:textColor="@color/colorDarkOrange"
+            android:textSize="30sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorOldGrey" />
+
+        <TextView
+            android:id="@+id/tvTulis"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="end"
+            android:padding="@dimen/value5"
+            android:singleLine="true"
+            android:text="@string/perhitungan"
+            android:textColor="@color/colorPurple"
+            android:textSize="30sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorOldGrey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/value40"
+            android:padding="@dimen/value5"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnTitik"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="@color/colorGrey"
+                    android:text="@string/titik"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btnSatu"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="@color/colorGrey"
+                    android:text="@string/_1"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btnEmpat"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="@color/colorGrey"
+                    android:text="@string/_4"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btnTujuh"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="@color/colorGrey"
+                    android:text="@string/_7"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btnClear"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="@color/colorOrange"
+                    android:text="@string/c"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnKurungBuka"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="@color/colorGrey"
+                    android:text="@string/kurungbuka"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btnDua"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="@color/colorGrey"
+                    android:text="@string/_2"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btnLima"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="@color/colorGrey"
+                    android:text="@string/_5"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btnDelapan"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="@color/colorGrey"
+                    android:text="@string/_8"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="@color/colorOrange"
+                    android:text="@string/del"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnKurungTutup"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="@color/colorGrey"
+                    android:text="@string/kurungtutup"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btnTiga"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="@color/colorGrey"
+                    android:text="@string/_3"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btnEnam"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="@color/colorGrey"
+                    android:text="@string/_6"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btnSembilan"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="@color/colorGrey"
+                    android:text="@string/_9"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btnNol"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="@color/colorGrey"
+                    android:text="@string/_0"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnTambah"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="@color/colorOrange"
+                    android:text="@string/plus"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btnKurang"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="@color/colorOrange"
+                    android:text="@string/minus"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btnKali"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="@color/colorOrange"
+                    android:text="@string/kali"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btnBagi"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="@color/colorOrange"
+                    android:text="@string/bagi"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btnHasil"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="@color/colorGreen"
+                    android:text="@string/samadengan"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
