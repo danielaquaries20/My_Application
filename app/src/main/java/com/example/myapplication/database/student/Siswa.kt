@@ -7,7 +7,8 @@ import androidx.room.PrimaryKey
 data class Siswa(
     var nama: String,
     var sekolah: String,
-    var gender: String
+    var gender: String,
+    var photoProfile: String
 ) {
     @PrimaryKey(autoGenerate = true)
     var id: Int = 0

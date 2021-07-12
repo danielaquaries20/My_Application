@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -10,9 +11,7 @@
     </data>
 
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -21,12 +20,13 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/value10">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/tambah_siswa"
+                android:text="@string/edit_data_siswa"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="17sp" />
@@ -36,10 +36,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
+                android:contentDescription="@string/icon_delete"
                 android:onClick="onClick"
                 android:src="@drawable/ic_baseline_delete" />
 
         </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ivEditProfile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/value15"
+            android:background="@color/colorOldGrey"
+            android:contentDescription="@string/image_profile"
+            android:onClick="onClick" />
 
 
         <EditText
@@ -47,6 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/value5"
             android:layout_marginBottom="@dimen/value5"
+            android:autofillHints="@string/nama_siswa"
             android:hint="@string/nama_siswa"
             android:inputType="textCapWords"
             android:text='@={activity.nama}' />
@@ -56,6 +68,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/value5"
             android:layout_marginBottom="@dimen/value5"
+            android:autofillHints="@string/sekolah"
             android:hint="@string/sekolah"
             android:inputType="textCapWords"
             android:text='@={activity.sekolah}' />
@@ -65,6 +78,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/value5"
             android:layout_marginBottom="@dimen/value5"
+            android:autofillHints="@string/gender"
             android:hint="@string/gender"
             android:inputType="textCapWords"
             android:text='@={activity.gender}' />

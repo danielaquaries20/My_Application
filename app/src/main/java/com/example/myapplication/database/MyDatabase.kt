@@ -10,7 +10,7 @@ import com.example.myapplication.database.student.SiswaDao
 
 @Database(
     entities = [Siswa::class],
-    version = 1,
+    version = 3,
     exportSchema = false
 )
 
