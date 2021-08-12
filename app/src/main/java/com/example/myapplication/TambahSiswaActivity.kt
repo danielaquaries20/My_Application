@@ -28,6 +28,7 @@ class TambahSiswaActivity : AppCompatActivity(), View.OnClickListener {
         binding.activity = this
 
         database = MyDatabase.getDatabase(this)
+
     }
 
     override fun onClick(view: View?) {

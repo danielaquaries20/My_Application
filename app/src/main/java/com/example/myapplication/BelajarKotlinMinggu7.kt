@@ -50,12 +50,7 @@ class BelajarKotlinMinggu7 : AppCompatActivity() {
                 gambar.layoutParams = LinearLayout.LayoutParams(200, 100)
                 gambar.setImageResource(R.drawable.car5)
                 linearGambar.addView(gambar)
-
-
             }
-
         }
-
-
     }
 }
