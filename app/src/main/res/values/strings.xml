@@ -83,6 +83,8 @@
     <string name="camera">Camera</string>
     <string name="gallery">Gallery</string>
     <string name="camera_and_gallery">Camera and Gallery</string>
+    <string name="edit_data_siswa">Edit Data Siswa</string>
+    <string name="icon_delete">icon delete</string>
 
     <string-array name="gambar_profile">
         <item>@drawable/icon_honkaiimpact3</item>

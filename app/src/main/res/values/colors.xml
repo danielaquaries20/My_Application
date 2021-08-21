@@ -26,5 +26,6 @@
     <color name="colorDarkOldGreen">#295C2B</color>
     <color name="whiteForward">#FFFFFFFF</color>
     <color name="blackForward">#FF000000</color>
+    <color name="colorOldGreyForward">#3D393E</color>
 
 </resources>

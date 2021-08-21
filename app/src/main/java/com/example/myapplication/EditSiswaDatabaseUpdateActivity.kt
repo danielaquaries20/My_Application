@@ -1,11 +1,18 @@
 package com.example.myapplication
 
+import android.content.Intent
+import android.graphics.ImageDecoder
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.MediaStore
+import android.util.Log
 import android.view.View
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.databinding.DataBindingUtil
 import com.example.myapplication.database.MyDatabase
+import com.example.myapplication.database.student.BitmapConverter
 import com.example.myapplication.database.student.Siswa
 import com.example.myapplication.databinding.ActivityEditSiswaDatabaseUpdateBinding
 import com.example.myapplication.databinding.ActivityTambahSiswaBinding
@@ -21,6 +28,24 @@ class EditSiswaDatabaseUpdateActivity : AppCompatActivity(), View.OnClickListene
     var nama = ""
     var sekolah = ""
     var gender = ""
+    var photoProfile = ""
+
+    private var activityLauncherGallery = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+        result.data?.data?.let {
+            try {
+                val bitmap = if (Build.VERSION.SDK_INT < 28) {
+                    MediaStore.Images.Media.getBitmap(this.contentResolver, it)
+                } else {
+                    val source = ImageDecoder.createSource(this.contentResolver, it)
+                    ImageDecoder.decodeBitmap(source)
+                }
+                binding.ivEditProfile.setImageBitmap(bitmap)
+                photoProfile = BitmapConverter().bitmapToString(bitmap)
+            } catch (e: Exception) {
+                e.printStackTrace()
+            }
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,8 +55,12 @@ class EditSiswaDatabaseUpdateActivity : AppCompatActivity(), View.OnClickListene
         nama = intent.getStringExtra("nama") ?: ""
         sekolah = intent.getStringExtra("sekolah") ?: ""
         gender = intent.getStringExtra("gender") ?: ""
+        photoProfile = intent.getStringExtra("photo") ?: ""
 
         binding.activity = this
+
+        val bitmap = BitmapConverter().stringToBitmap(this, photoProfile)
+        binding.ivEditProfile.setImageBitmap(bitmap)
 
 
         database = MyDatabase.getDatabase(this)
@@ -39,32 +68,38 @@ class EditSiswaDatabaseUpdateActivity : AppCompatActivity(), View.OnClickListene
 
     override fun onClick(view: View?) {
         when (view) {
+            binding.ivEditProfile->{
+                val galleryIntent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
+                activityLauncherGallery.launch(galleryIntent)
+            }
             binding.buttonUpdateSiswa -> {
-//                Log.d("tes data", "$nama $sekolah $gender")
-                if (nama.isNotEmpty() && sekolah.isNotEmpty() && gender.isNotEmpty()) {
-                    val siswa = Siswa(nama, sekolah, gender).apply {
+                Log.d("tes data edit", "$nama $sekolah $gender $photoProfile")
+                if (nama.isNotEmpty() && sekolah.isNotEmpty() && gender.isNotEmpty() && photoProfile.isNotEmpty()) {
+                    val siswa = Siswa(nama, sekolah, gender, photoProfile).apply {
                         id = idSiswa
                     }
 
                     Executors.newSingleThreadExecutor().execute {
                         database.siswaDao().update(siswa)
                     }
-
-                    Toast.makeText(this, "Data berhasil diubah", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this,DaftarNamaSiswaActivity::class.java)
+                    startActivity(intent)
+                    Toast.makeText(this, "Data berhasil diubah", Toast.LENGTH_LONG).show()
                     finish()
                 }
             }
 
             binding.ivDelete -> {
-                val siswa = Siswa(nama, sekolah, gender).apply {
+                val siswa = Siswa(nama, sekolah, gender, "").apply {
                     id = idSiswa
                 }
 
                 Executors.newSingleThreadExecutor().execute {
                     database.siswaDao().delete(siswa)
                 }
-
-                Toast.makeText(this, "Data berhasil dihapus", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this,DaftarNamaSiswaActivity::class.java)
+                startActivity(intent)
+                Toast.makeText(this, "Data berhasil dihapus", Toast.LENGTH_LONG).show()
                 finish()
 
             }

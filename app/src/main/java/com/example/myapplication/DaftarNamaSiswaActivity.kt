@@ -29,6 +29,7 @@ class DaftarNamaSiswaActivity : AppCompatActivity(), View.OnClickListener{
                     putExtra("nama", it.nama)
                     putExtra("sekolah", it.sekolah)
                     putExtra("gender", it.gender)
+                    putExtra("photo", it.photoProfile)
                 }
                 startActivity(intent)
             }
